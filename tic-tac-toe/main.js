@@ -28,37 +28,37 @@ function checkwin() {
 
   if ((b1 == b2) && (b2 == b3) && (b1 != "")) {
     document.getElementById('print').innerHTML = `Player ${b1} won`;
-    alert(`Player ${b1} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    // alert(`Player ${b1} won`);
+    disable();
   } else if ((b1 == b5) && (b5 == b9) && (b1 != "")) {
     document.getElementById('print').innerHTML = `Player ${b1} won`;
     // alert(`Player ${b1} won`);
     console.log(`Player ${b1} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    disable();
   } else if ((b1 == b4) && (b4 == b7) && (b1 != "")) {
     document.getElementById('print').innerHTML = `Player ${b1} won`;
-    alert(`Player ${b1} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    // alert(`Player ${b1} won`);
+    disable();
   } else if ((b3 == b5) && (b5 == b7) && (b3 != "")) {
     document.getElementById('print').innerHTML = `Player ${b3} won`;
-    alert(`Player ${b7} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    // alert(`Player ${b7} won`);
+    disable();
   } else if ((b7 == b8) && (b8 == b9) && (b8 != "")) {
     document.getElementById('print').innerHTML = `Player ${b8} won`;
-    alert(`Player ${b8} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    // alert(`Player ${b8} won`);
+    disable();
   } else if ((b9 == b6) && (b6 == b3) && (b9 != "")) {
     document.getElementById('print').innerHTML = `Player ${b9} won`;
-    alert(`Player ${b9} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    // alert(`Player ${b9} won`);
+    disable();
   } else if ((b2 == b5) && (b5 == b8) && (b2 != "")) {
     document.getElementById('print').innerHTML = `Player ${b8} won`;
-    alert(`Player ${b8} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    // alert(`Player ${b8} won`);
+    disable();
   } else if ((b4 == b5) && (b5 == b6) && (b6 != "")) {
     document.getElementById('print').innerHTML = `Player ${b6} won`;
-    alert(`Player ${b6} won`);
-    // document.getElementsByTagName("INPUT").disabled = true;
+    // alert(`Player ${b6} won`);
+    disable();
   }
 }
 function reset() {
@@ -72,4 +72,15 @@ function reset() {
   document.getElementById("b7").value = '';
   document.getElementById("b8").value = '';
   document.getElementById("b9").value = '';
+}
+function disable() {
+  document.getElementById('b1').disabled = true;
+  document.getElementById("b2").disabled = true;
+  document.getElementById("b3").disabled = true;
+  document.getElementById("b4").disabled = true;
+  document.getElementById("b5").disabled = true;
+  document.getElementById("b6").disabled = true;
+  document.getElementById("b7").disabled = true;
+  document.getElementById("b8").disabled = true;
+  document.getElementById("b9").disabled = true;
 }
